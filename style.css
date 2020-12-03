@@ -1,0 +1,167 @@
+/* ==========================================================================
+   Global styles
+   ========================================================================== */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --black: #000;
+    --white: #fff;
+}
+
+p {
+    font-size: larger;
+}
+
+.collapse, .navbar-collapse {
+    justify-content: flex-end;
+}
+
+.bg-light {
+    background-color: var(--white)!important;
+}
+
+.navbar {
+    padding: 2rem;
+    font-weight: bold;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.08);
+}
+
+.full {
+    height: 100vh;
+    min-height: 800px;
+    background-image: url(https://images.unsplash.com/photo-1534531409543-069f6204c5b4?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1355&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.full::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(54, 54, 54, 0.35);
+}
+
+.full h1 {
+    color: var(--light);
+    font-weight: 500;
+}
+
+.btn-primary {
+    padding: 10px 50px;
+    font-size: small;
+    font-weight: 500;
+}
+ 
+section {
+    margin-top: 6.25rem;
+    margin-bottom: 6.25rem;
+}
+
+.card {
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.card svg {
+    padding-left: 1.25rem;
+}
+
+.card-title {
+    color: var(--black);
+}
+
+#cta {
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+}
+
+#form-section .container {
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+#pre-footer {
+    color: var(--white);
+    text-align: center;
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+    background-image: url(https://images.unsplash.com/photo-1534531409543-069f6204c5b4?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1355&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0;
+    position: relative;
+}
+
+#pre-footer::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(54, 54, 54, 0.35);
+    top: 0;
+    left: 0;
+}
+
+footer {
+    padding: 2rem;
+    font-weight: bold;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.08);
+}
+
+footer p {
+    text-align: right;
+}
+
+footer a:hover {
+    color: var(--black);
+    text-decoration: none;
+}
+
+.footer-brand {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+    color: var(--black);
+}
+
+/* ==========================================================================
+Mobile styles
+========================================================================== */
+
+@media (max-width: 767px) {
+
+    .display-3 {
+        font-size: 3rem;
+    }
+
+    .m-w-100 {
+        width: 100% !important;
+    }
+
+    .card {
+        margin-top: 2rem;
+    }
+
+    footer, footer p {
+        text-align: center;
+    }
+
+}
